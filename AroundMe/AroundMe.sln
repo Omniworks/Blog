@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AroundMe", "AroundMe\AroundMe.shproj", "{4D49AC2C-AF42-4D57-98FB-86A9D845E58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AroundMe.Droid", "Droid\AroundMe.Droid.csproj", "{5B0DF629-CB87-4785-9923-C4554BEE0134}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		AroundMe\AroundMe.projitems*{5b0df629-cb87-4785-9923-c4554bee0134}*SharedItemsImports = 4
+		AroundMe\AroundMe.projitems*{4d49ac2c-af42-4d57-98fb-86a9d845e58c}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B0DF629-CB87-4785-9923-C4554BEE0134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0DF629-CB87-4785-9923-C4554BEE0134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0DF629-CB87-4785-9923-C4554BEE0134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0DF629-CB87-4785-9923-C4554BEE0134}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="Droid\AroundMe.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 7 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AroundMe\Views\MainPage.cs">
+    <Files>
+      <File FileName="AroundMe\Views\MainPage.cs" Line="17" Column="4" />
+      <File FileName="AroundMe\ViewModel\MainModel.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{4D49AC2C-AF42-4D57-98FB-86A9D845E58C}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AroundMe</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AroundMe.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\GoogleService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\NearbyQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BaseViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
+  </ItemGroup>
+</Project>
