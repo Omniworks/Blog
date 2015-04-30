@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="AroundMe.Droid">
   <uses-sdk android:minSdkVersion="15" />
   <application android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="AroundMe.Droid" android:theme="@android:style/Theme.Holo.Light" android:name="aroundme.droid.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="AroundMe.Droid" android:theme="@android:style/Theme.Holo.Light" android:name="md5292d6b04cb71f24138f7448d041e8e77.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

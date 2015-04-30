@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace AroundMe
 {
@@ -29,7 +30,7 @@ namespace AroundMe
 		public int width { get; set; }
 	}
 
-	public class result
+	public class Place
 	{
 		public Geometry geometry { get; set; }
 		public string icon { get; set; }
@@ -48,7 +49,8 @@ namespace AroundMe
 	{
 		public List<object> html_attributions { get; set; }
 		public string next_page_token { get; set; }
-		public List<result> results { get; set; }
+		[JsonProperty(PropertyName = "results")]
+		public List<Place> Places { get; set; }
 		public string status { get; set; }
 	}
 }

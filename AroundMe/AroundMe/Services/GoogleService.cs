@@ -26,7 +26,9 @@ namespace AroundMe
 
 		public async Task<NearbyQuery> GetPlacesForCoordinates( Double latitude, Double longitude)
 		{
-			return await GetRequest<NearbyQuery>( Constants.PlacesQueryUrl );
+			var url = String.Format (Constants.PlacesQueryUrl, latitude, longitude, Constants.APIKey);
+
+			return await GetRequest<NearbyQuery>( url );
 		}
 	}
 }

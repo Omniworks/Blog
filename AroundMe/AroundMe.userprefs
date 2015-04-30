@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Droid\AroundMe.Droid.csproj">
+﻿<Properties StartupItem="Droid\AroundMe.Droid.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 7 (KitKat)" />
   <MonoDevelop.Ide.Workbench ActiveDocument="AroundMe\Views\MainPage.cs">
     <Files>

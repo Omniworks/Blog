@@ -6,14 +6,14 @@ namespace AroundMe
 {
 	public class MainPage : ContentPage
 	{
-		private MainModel ViewModel
+		private MainViewModel ViewModel
 		{
-			get { return BindingContext as MainModel; }
+			get { return BindingContext as MainViewModel; }
 		}
 
 		public MainPage ()
 		{
-			BindingContext = new MainModel ();
+			BindingContext = new MainViewModel ();
 
 			var main_stack = new StackLayout ();
 
