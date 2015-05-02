@@ -14,6 +14,7 @@ namespace AroundMe
 		{
 		}
 
+		//Command property for loading places operation bound
 		private Command _LoadPlacesCommand;
 		public Command LoadPlacesCommand
 		{
@@ -25,16 +26,22 @@ namespace AroundMe
 
 		private async void ExecuteLoadPlacesCommand()
 		{
+			//check if an operation is already in progress and if true then return
 			if (IsBusy)
 				return;
 
+			//set IsBusy flag true to indicate that a load  operation is starting 
 			IsBusy = true;
+
+			//notify abbor command state change (as it is bound to busy flag)
 			LoadPlacesCommand.ChangeCanExecute();
 
 			try
 			{
+				//execute the load operation
 				NearbyQuery query = await App.Service.GetPlacesForCoordinates(38.145176, 23.830061);
 
+				//populate places list with results
 				if(query.Places != null ) {
 					foreach (Place p in query.Places) {
 						Places.Add (p);
@@ -45,7 +52,10 @@ namespace AroundMe
 				Debug.WriteLine ("Error loading places: ", ex.Message);
 			}
 			finally {
+				//an operation is finished
 				IsBusy = false;
+
+				//notify abbor command state change (as it is bound to busy flag)
 				LoadPlacesCommand.ChangeCanExecute();
 			}
 		}
