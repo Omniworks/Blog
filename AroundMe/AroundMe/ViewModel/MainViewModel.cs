@@ -20,7 +20,7 @@ namespace AroundMe
 		{
 			get
 			{
-				return _LoadPlacesCommand ?? (_LoadPlacesCommand = new Command(ExecuteLoadPlacesCommand, () => !IsBusy ));
+				return _LoadPlacesCommand ?? (_LoadPlacesCommand = new Command( ExecuteLoadPlacesCommand, () => !IsBusy ));
 			}            
 		}
 
