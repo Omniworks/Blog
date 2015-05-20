@@ -38,13 +38,18 @@ namespace AroundMe
 
 			try
 			{
-				//execute the load operation
-				NearbyQuery query = await App.Service.GetPlacesForCoordinates(38.145176, 23.830061);
+				//get current location
+				bool DidGetLocation = await App.Locator.GetLocation();
+					
+				if(DidGetLocation) {
+					//execute the load operation
+					NearbyQuery query = await App.Service.GetPlacesForCoordinates(App.Locator.Latitude, App.Locator.Longitude);
 
-				//populate places list with results
-				if(query.Places != null ) {
-					foreach (Place p in query.Places) {
-						Places.Add (p);
+					//populate places list with results
+					if(query.Places != null ) {
+						foreach (Place p in query.Places) {
+							Places.Add (p);
+						}
 					}
 				}
 			}

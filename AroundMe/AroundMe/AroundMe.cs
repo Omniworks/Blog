@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 
 namespace AroundMe
@@ -7,6 +6,7 @@ namespace AroundMe
 	public class App : Application
 	{
 		public static GoogleService Service = new GoogleService();
+		public static GeolocatorService Locator = new GeolocatorService();
 
 		public App ()
 		{

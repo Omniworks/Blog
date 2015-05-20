@@ -3795,6 +3795,12 @@ var secondFetch = DependencyService.Get<IDependencyTest> (DependencyFetchTarget.
             <summary>Registers the platform-specific implementation of type T.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.DependencyService.Register``2">
+            <typeparam name="T">To be added.</typeparam>
+            <typeparam name="TImpl">To be added.</typeparam>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.Device">
             <summary>An utility class to interract with the current Device/Platform.</summary>
             <remarks />
@@ -8077,7 +8083,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
             <typeparam name="TSender">To be added.</typeparam>
             <param name="subscriber">To be added.</param>
             <param name="message">To be added.</param>
-            <summary>Unsubscribes from the specified parameterless subscriber messages.</summary>
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.MessagingCenter.Unsubscribe``1(System.Object,System.String)">
@@ -8085,7 +8091,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
             <typeparam name="TArgs">To be added.</typeparam>
             <param name="subscriber">To be added.</param>
             <param name="message">To be added.</param>
-            <summary>Unsubscribes from the specified parameterized subscriber messages.</summary>
+            <summary>Unsubscribes from the specified parameterless subscriber messages.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.ModalEventArgs">
@@ -8384,6 +8390,29 @@ Children = {
                 <para>For <see cref="E:Xamarin.Forms.NavigationPage.Pushed" />, this is the <see cref="T:Xamarin.Forms.Page" /> that was removed. For <see cref="E:Xamarin.Forms.NavigationPage.Pushed" />
 					and <see cref="E:Xamarin.Forms.NavigationPage.PoppedToRoot" /> it is the newly visible page, the pushed page or the root respectively.</para>
             </remarks>
+        </member>
+        <member name="T:Xamarin.Forms.NavigationMenu">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.NavigationMenu">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.NavigationMenu.Add(Xamarin.Forms.Page)">
+            <param name="target">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.NavigationMenu.Remove(Xamarin.Forms.Page)">
+            <param name="target">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.NavigationMenu.Targets">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.NavigationPage">
             <summary>A <see cref="T:Xamarin.Forms.Page" /> that manages the navigation and user-experience of a stack of other pages.</summary>

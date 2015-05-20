@@ -53,3 +53,12 @@ C:\projects\Blog\AroundMe\Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\projects\Blog\AroundMe\Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\projects\Blog\AroundMe\Droid\obj\Debug\R.cs.flag
 C:\projects\Blog\AroundMe\Droid\obj\Debug\uploadflags.txt
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Geolocator.Plugin.Abstractions.dll
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Geolocator.Plugin.dll
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Xamarin.Forms.Platform.dll
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Geolocator.Plugin.Abstractions.pdb
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Geolocator.Plugin.Abstractions.xml
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Geolocator.Plugin.pdb
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Geolocator.Plugin.xml
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Geolocator.Plugin.Abstractions.dll.mdb
+C:\projects\Blog\AroundMe\Droid\bin\Debug\Geolocator.Plugin.dll.mdb
