@@ -19,6 +19,9 @@ namespace AroundMe.Droid
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
+			//initialize google maps
+			Xamarin.FormsMaps.Init(this, bundle);
+
 			LoadApplication (new App ());
 		}
 	}

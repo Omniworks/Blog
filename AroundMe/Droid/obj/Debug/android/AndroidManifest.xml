@@ -1,23 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="AroundMe.Droid">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.aroundme.androidapp" android:versionCode="1" android:versionName="1.0">
   <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21" />
-  <application android:name="mono.android.app.Application" android:debuggable="true">
+  <application android:label="Anround Me" android:name="mono.android.app.Application" android:debuggable="true">
+    <!-- Put your Google Maps V2 API Key here. -->
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAxc8FmmkxNHShk3b-5WKK1tMbBaKoKAEU" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="AroundMe.Droid" android:theme="@android:style/Theme.Holo.Light" android:name="md5292d6b04cb71f24138f7448d041e8e77.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="AroundMe.Droid.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.aroundme.androidapp.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.AroundMe.Droid" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.aroundme.androidapp" />
       </intent-filter>
     </receiver>
   </application>
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

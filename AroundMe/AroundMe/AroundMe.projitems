@@ -17,6 +17,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\MainPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\GoogleService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\GeolocatorService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\MapPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\SearchPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\FavoritesPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

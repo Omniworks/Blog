@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Collections.ObjectModel;
 
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace AroundMe
 {
@@ -20,11 +21,11 @@ namespace AroundMe
 		{
 			get
 			{
-				return _LoadPlacesCommand ?? (_LoadPlacesCommand = new Command( ExecuteLoadPlacesCommand, () => !IsBusy ));
+				return _LoadPlacesCommand ?? (_LoadPlacesCommand = new Command(async () => await ExecuteLoadPlacesCommand (), () => !IsBusy ));
 			}            
 		}
 
-		private async void ExecuteLoadPlacesCommand()
+		public async Task ExecuteLoadPlacesCommand()
 		{
 			//check if an operation is already in progress and if true then return
 			if (IsBusy)
