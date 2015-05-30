@@ -48,7 +48,7 @@ namespace AroundMe
 			var my_position = new Position (App.Locator.Latitude, App.Locator.Longitude);
 				
 			//initialize the map object
-			var map = new Map( MapSpan.FromCenterAndRadius( my_position, Distance.FromKilometers(0.5)) ) 
+			var map = new Map( MapSpan.FromCenterAndRadius( my_position, Distance.FromKilometers(1)) ) 
 			{
 				IsShowingUser = true,
 				HeightRequest = 100,
